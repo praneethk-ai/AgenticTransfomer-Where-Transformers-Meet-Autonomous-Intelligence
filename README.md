@@ -1,13 +1,14 @@
-
-
 # AgenticTransformer: Where Transformers Meet Autonomous Intelligence
 
 ![image](https://github.com/user-attachments/assets/b56ad19d-4cf4-4b84-8123-1400a9a039aa)
 
-Agentic Transfomer 
+                                  Agentic Transfomer 
 
 
 <img width="1728" alt="Screenshot 2025-05-26 at 17 54 52" src="https://github.com/user-attachments/assets/86609448-590d-4718-8e97-7b7d5b6d13fd" />
+
+
+
 
 **Unlocking Sample-Efficient & Generalizable Policies for Autonomous Agents**
 
@@ -32,6 +33,8 @@ Traditional Transformer-based policies, while powerful, often face challenges in
   * **Learning Progression:** It enables the Transformer to understand *how* a policy improves over time or *how* an expert's skill develops, rather than just observing isolated actions.
   * **Closing the Gap:** It bridges the gap between state-of-the-art Transformer architectures and the practical demands of real-world autonomous intelligence, where data is often imperfect and generalization is paramount.
 
+For a deeper dive into the technical details, please refer to our upcoming research paper (link to be added).
+
 ## 📚 How It Works (High-Level)
 
 The core mechanism revolves around the **Cross-Episodic Curriculum (CEC)**, which operates in two main stages:
@@ -46,7 +49,16 @@ The core mechanism revolves around the **Cross-Episodic Curriculum (CEC)**, whic
       * During training, the Transformer model is equipped with a novel attention mechanism that allows it to "look back" beyond the current episode and leverage the organized curricular data.
       * This "cross-episodic attention" enables the model to trace back improved behaviors encoded in the curriculum, allowing for more efficient policy internalisation and refinement.
 
-For a deeper dive into the technical details, please refer to our upcoming research paper (link to be added).
+## 📊 Benchmarks
+
+Our preliminary benchmarks demonstrate the efficiency of the AgenticTransformer model. These results are based on internal testing and provide an indication of performance.
+
+**Benchmark Results:**
+
+  * **Forward pass:** `94.04ms ± 5.11ms`
+  * **Backward pass:** `263.80ms ± 15.37ms`
+
+*(Note: These benchmarks represent the time taken for a single forward and backward pass, respectively, with associated standard deviation. Further details on the specific hardware and dataset used for these benchmarks will be provided in the full research paper.)*
 
 ## 🛠️ Installation
 
@@ -121,4 +133,8 @@ We provide examples to demonstrate how to prepare data for CEC and train an Agen
 # train_il_agent(model, cec_demos)
 ```
 
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](https://www.google.com/search?q=LICENSE) file for details.
 
