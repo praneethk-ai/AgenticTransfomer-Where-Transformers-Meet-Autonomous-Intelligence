@@ -2,7 +2,9 @@
 
 # AgenticTransformer: Where Transformers Meet Autonomous Intelligence
 
-*(Consider adding a project logo or a representative image/gif here to make it visually appealing. Example: a screenshot of an agent performing a learned task.)*
+![image](https://github.com/user-attachments/assets/b56ad19d-4cf4-4b84-8123-1400a9a039aa)
+
+<img width="1728" alt="Screenshot 2025-05-26 at 17 54 52" src="https://github.com/user-attachments/assets/86609448-590d-4718-8e97-7b7d5b6d13fd" />
 
 **Unlocking Sample-Efficient & Generalizable Policies for Autonomous Agents**
 
